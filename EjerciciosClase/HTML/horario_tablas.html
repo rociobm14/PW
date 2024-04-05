@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> HORARIO DE CLASE</title>
+    </head>
+
+    <body>
+        <table border="1">
+            <caption>HORARIO INGENIERÍA INFORMATICA</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>viernes</th>
+                </tr> 
+            </thead>
+
+            <tbody>
+
+                <!--Para martes miercoles jueves y viernes, hago rowspan ya que por la mañana no tengo clases.
+                Se quedaría en blanco, añado tantos rowspan como correspondan a cada día. Extiendo hasta 4 porque
+                cuando vaya por la fila 4 habrá una fila que abarque todas las columnas con la comida y el descanso-->
+                <tr>
+                    <td>9:30-10:30</td>
+                    <td>AC PRACTICAS</td>
+                    <td rowspan="4"></td>
+                    <td rowspan="4"></td>
+                    <td rowspan="4"></td>
+                    <td rowspan="4"></td>
+                </tr>
+                
+                <tr>
+                    <td>10:30-11:30</td>
+                    <td>AC PRACTICAS</td>
+                </tr>
+
+                <tr>
+                    <td>11:30-12:30</td>
+                    <td>AC TEORIA</td>
+                </tr>
+
+                <tr>
+                    <td>12:30-13:30</td>
+                    <td>AC TEORIA</td>
+                </tr>
+
+                <!--La comida y el descanso se extiende solo por 5 columnas para no solapar
+                con el horario-->
+                <tr>
+                    <td>13:30-15:30</td>
+                    <td colspan="5">COMIDA Y DESCANSO</td>
+                </tr>
+
+                <!--Tras la comida, voy ajustando los rows que ocupa cada celda, en función
+                de cuando tenga clase o no-->
+                <tr>
+                    <td>15:30-16:30</td>
+                    <td rowspan="4"></td>
+                    <td>CUIA TEORIA</td>
+                    <td rowspan="1"></td>
+                    <td rowspan="4"></td>
+                    <td>PW PRACTICAS</td>
+                </tr>
+
+                <tr>
+                    <td>16:30-17:30</td>
+                    <td rowspan="3"></td>
+                    <td>CUIA TEORIA</td>
+                    <td>PW PRACTICAS</td>
+                </tr>
+
+                <tr>
+                    <td>17:30-18:30</td>
+                    <td>PW TEORÍA</td>
+                    <td>CUIA PRACTICAS</td>
+                </tr>
+
+                <tr>
+                    <td>18:30-19:30</td>
+                    <td>PW TEORÍA</td>
+                    <td>CUIA PRACTICAS</td>
+                </tr>
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <td colspan="6">horario curso 2023-2024</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+#parrafo1{
+    background-color: aquamarine;
+    color:blue;
+    /*pruebo imagen de google como fondo, sin repetirse, por lo
+    que no se extendera en todo el parrafo, y solo lo hara en el centro*/
+    background: url(ficheros/google.jpg) no-repeat center;
+}
+
+/*A todos los parrafos se le aplica esta regla excepto al 1,
+ya que la regla de #parrafo1 tiene mas especificidad*/
+p{
+    background-color: white;
+}
+
+
+body{
+    background-color: pink;
+    color:chartreuse;
+
+}
+
+
+a:visited{
+    color: red;
+}
+
+a:hover{
+    color:fuchsia;
+    text-decoration: none; /*al pasar el raton por encima se quita el subrayado*/
+}
+
+
+
