@@ -1,0 +1,105 @@
+section {
+    display: flex;
+    align-items: center; /* Alinear verticalmente los elementos */
+    width: 70%;
+}
+
+form{
+
+    width: 19%;
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    align-items: center; /* Alinea los elementos a la izquierda */
+    margin-left: auto; /* Mueve el formulario a la derecha del section */
+    margin-top: -200px;
+    margin-bottom: 10px;
+    background-color: rgba(28, 108, 138, 0.5); /* Color de fondo azul transparente */
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-style:ridge;
+    border-color: rgba(28, 108, 138, 0.5);
+    border-width: 10px;
+
+}
+
+form h3{
+    font-family: 'Indie Flower', cursive;
+    font-style: italic;
+    font-size: 30px;
+    color: white;
+}
+
+form label{
+
+    font-family: 'Indie Flower', cursive;
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+
+}
+
+form input{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+form #InicioSesion {
+    border: none; /* Quita el borde predeterminado */
+    border-radius: 20px; /* Hace que el botón esté redondeado */
+    background-color: blue; /* Establece el color de fondo azul */
+    color: white; /* Establece el color del texto en blanco */
+    padding: 10px 20px; /* Añade relleno para espaciar el texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+form a{
+    color: white;
+    font-size: 21px;
+    font-weight: bold; 
+}
+
+
+
+#logo img{
+    width: 120px;
+    height: 120px;
+}
+
+#logo h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 70px;
+    color:rgb(60, 110, 110);
+    -webkit-text-stroke-width: 1px; /* Ancho del trazo del texto en navegadores webkit (Safari, Chrome, etc.) */
+    -webkit-text-stroke-color: white; /* Color del trazo del texto en navegadores webkit */
+}
+
+section form input{
+    display: block;
+}
+
+body{
+    background: url('../imagenes/image1.jpeg');
+}
+
+nav {
+    display: flex;
+    justify-content: space-around; /* Espacio igual entre cada elemento */
+    width: 100%; /* Ocupar todo el ancho disponible */
+    background-color:  rgba(28, 108, 138, 0.5); /* Color de fondo del menú */
+}
+
+nav a {
+    padding: 5px; /* Espacio interior */
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    -webkit-text-stroke-width: 1px; /* Ancho del trazo del texto en navegadores webkit (Safari, Chrome, etc.) */
+    -webkit-text-stroke-color: white; /* Color del trazo del texto en navegadores webkit */
+    text-decoration: none; /* Quitar subrayado del enlace */
+}
+
+nav a:hover {
+    background-color:blue; /* Color de fondo al pasar el ratón por encima */
+}
