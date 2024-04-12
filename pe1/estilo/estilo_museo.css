@@ -1,10 +1,17 @@
-section {
+/* CSS body */
+body{
+    background: url('../imagenes/image1.jpeg');
+}
+
+/* CSS header, común a todas las páginas*/
+
+#logo {
     display: flex;
     align-items: center; /* Alinear verticalmente los elementos */
     width: 70%;
 }
 
-form{
+header form{
 
     width: 19%;
     display: flex;
@@ -22,14 +29,14 @@ form{
 
 }
 
-form h3{
+header form h3{
     font-family: 'Indie Flower', cursive;
     font-style: italic;
     font-size: 30px;
     color: white;
 }
 
-form label{
+header form label{
 
     font-family: 'Indie Flower', cursive;
     margin-top: -10px;
@@ -39,12 +46,12 @@ form label{
 
 }
 
-form input{
+header form input{
     padding: 5px;
     margin-bottom: 10px;
 }
 
-form #InicioSesion {
+header form #InicioSesion {
     border: none; /* Quita el borde predeterminado */
     border-radius: 20px; /* Hace que el botón esté redondeado */
     background-color: blue; /* Establece el color de fondo azul */
@@ -54,12 +61,11 @@ form #InicioSesion {
     font-size: 16px; /* Tamaño del texto */
 }
 
-form a{
+header form a{
     color: white;
     font-size: 21px;
     font-weight: bold; 
 }
-
 
 
 #logo img{
@@ -69,9 +75,10 @@ form a{
 
 #logo h1{
     font-family: 'Indie Flower', cursive;
-    font-size: 70px;
+    font-size: 80px;
+    font-weight: bold;
     color:rgb(60, 110, 110);
-    -webkit-text-stroke-width: 1px; /* Ancho del trazo del texto en navegadores webkit (Safari, Chrome, etc.) */
+    -webkit-text-stroke-width: 2px; /* Ancho del trazo del texto en navegadores webkit (Safari, Chrome, etc.) */
     -webkit-text-stroke-color: white; /* Color del trazo del texto en navegadores webkit */
 }
 
@@ -79,18 +86,15 @@ section form input{
     display: block;
 }
 
-body{
-    background: url('../imagenes/image1.jpeg');
-}
 
-nav {
+header nav {
     display: flex;
     justify-content: space-around; /* Espacio igual entre cada elemento */
     width: 100%; /* Ocupar todo el ancho disponible */
-    background-color:  rgba(28, 108, 138, 0.5); /* Color de fondo del menú */
+    background-color:  rgba(28, 108, 138, 0.8); /* Color de fondo del menú */
 }
 
-nav a {
+header nav a {
     padding: 5px; /* Espacio interior */
     font-family:'Courier New', Courier, monospace;
     font-size: 20px;
@@ -100,6 +104,105 @@ nav a {
     text-decoration: none; /* Quitar subrayado del enlace */
 }
 
-nav a:hover {
+header nav a:hover {
     background-color:blue; /* Color de fondo al pasar el ratón por encima */
 }
+
+/*CSS Footer, común a todas las páginas*/
+
+footer{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#contacto, #practica{
+    margin-left: -200px;
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(74, 74, 114);
+    font-style: italic;
+}
+
+#practica{
+    margin-left: 200px;
+}
+
+#contacto:hover, #practica:hover{
+    color: rgb(129, 51, 51); /* Color del texto cuando se pasa el ratón sobre él */
+}
+
+/*CSS main index.html*/
+
+#bienvenida{
+    display: flex;
+    width:50%;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 20px;
+    background-color:  rgba(28, 108, 138, 0.75);
+    border: solid;
+    border-style:dashed;
+    border-radius: 30px;
+    color: white;
+}
+
+#bienvenida h1{
+    font-size: 50px;
+    font-style: oblique;
+}
+
+#bienvenida p{
+    font-size: 30px;
+    font-style: italic;
+}
+
+#obrainvitada{
+    width: 30%;
+    display: block;
+    margin-top: 30px;
+    margin-left: 1000px;
+    border: solid;
+    border-width: 10px;
+    background-color: rgb(122, 187, 122, 0.6);
+    border-radius: 30px;
+    border-color: rgb(122, 187, 122);
+    border-style: dotted;
+}
+
+#obrainvitada h4 {
+    margin-left: 20px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#autora{
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    margin-top: 1px;
+    margin-bottom: 0px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #34495e;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(35, 165, 68, 0.5);
+}
+
+#diseños{
+
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    margin-top: 0px;
+    margin-left: 27px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #34495e;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(35, 165, 68, 0.5);
+
+}
+
+
