@@ -2,14 +2,20 @@
 <html>
     <head>
         <title>Página de inicio</title>
+        <link rel="stylesheet" type="text/css" href="estilo/estilo_museo.css"/>
     </head>
     <body>
         <header>
-            <h1>Museo del arte</h1>
-            <img src="" alt="logotipo del museo"/>
-            <!--Formulario inicio sesión-->
+
+            <section id="logo">
+                <img src="imagenes/IMG_4819.jpg" alt="logotipo del museo"/>
+                <h1>Museo del arte contemporaneo</h1>
+
+            </section>
+            
+    
             <form>
-                <h2>Inicio de sesión</h2>
+                <h3>Inicio de sesión</h3>
                 <label for="Email">Email</label>
                 <input type="email" id="Email" name="emailusuario" placeholder="Introduzca su email"/>
 
@@ -17,11 +23,11 @@
                 <input type="password" id="Contraseña" name="contraseñausuario" placeholder="Introduzca la contraseña"/>
 
                 <input type="submit" id="InicioSesion" name="Iniciar sesión"/>
+
+                <!--Está bien esto para el enlace a darse de alta?-->
+                <a href="altausuarios.html">¡Regístrate aquí!</a>
             </form>
 
-            <!--Está bien esto para el enlace a darse de alta?-->
-            <h2>Si aún no eres miembro del museo, puedes darte de alta en el siguiente enlace</h2>
-            <a href="altausuarios.html">Alta de usuarios</a>
 
             <!--Menú de navegación para las distintas opciones-->
             <nav>
@@ -36,11 +42,15 @@
 
         <main>
 
-            <img src="" alt="imagen iconica del museo que abarcara todo"/>
-
             <!--Tengo duda de si asi esta bien o es mejor section/article-->
-            <h1>Museo del arte</h1>
-            <p>Descripción del museo</p>
+            <h1>¡Bienvenidos al museo de arte contemporaneo!</h1>
+            <p>En este lugar encontrareis Aquí encontrarán una colección 
+                única de obras, especialmente destacadas por las famosas 
+                creaciones de María BE. Esta talentosa artista se dedica al arte 
+                contemporáneo con un enfoque en animales, retratos de mujeres y paisajes, q
+                ue abundan en nuestras galerías. Explora su trabajo y déjate cautivar por l
+                a belleza y la expresión que ofrecen estas fascinantes piezas
+            </p>
             
         </main>
 
