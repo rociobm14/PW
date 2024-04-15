@@ -1,0 +1,105 @@
+#colecciones_generales{
+    display: flex;
+}
+
+
+aside {
+    width: 100%;
+    margin-top: 20px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+aside nav {
+    margin-top: 70px;
+}
+
+nav section {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+nav section h3 {
+
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(90, 90, 150);
+}
+
+
+nav section a {
+    display: block;
+    font-size: 25px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+@media (min-width: 600px) {
+    aside {
+        width: 15%;
+    }
+
+    nav section h3 {
+        margin-left: 0;
+        width: auto;
+    }
+}
+
+
+#colecciones_generales #obras{
+    width: 85%;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+#obras h2{
+    font-size: 40px;
+    font-style: italic;
+    color: white;
+    background-color: rgb(140, 198, 202);
+    border-width: 5px;
+    border-color: white;
+    border-style: dashed;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+#colecciones_generales #obras, #todas{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#colecciones_generales section article {
+    flex: 1 0 30%; 
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    width: 200px;
+}
+
+figure {
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    padding: 5px;
+    margin: 0;
+    height: 700px;
+}
+
+figure img {
+    width: 100%; 
+    height: 600px; 
+    object-fit: cover; 
+}
+
+figcaption {
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
