@@ -1,0 +1,16 @@
+main {
+    text-align: center;
+    background-color: rgb(207, 224, 240, 0.8);
+    width: 50%;
+    margin-left: 20%;
+}
+
+main h2 {
+    color: green;
+    font-size: 50px;
+}
+
+main p {
+    color: rgba(41, 36, 36, 0.8);
+    font-size: 30px;
+}
