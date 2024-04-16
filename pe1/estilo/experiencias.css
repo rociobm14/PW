@@ -1,0 +1,76 @@
+main{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+main #tu_opinion{
+    padding: 20px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: rgb(207, 224, 240, 0.8);
+}
+
+main #opiniones{
+    padding: 20px;
+    margin-left: 30px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: rgb(207, 224, 240, 0.8);
+}
+
+#tu_opinion h2, #opiniones h2{
+    color: rgb(46, 46, 82);
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario{
+    font-size: 20px;
+    font-style: italic;
+}
+
+#recomendar, #radio p, #checkbox p, #opinion{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#radio label, #checkbox label{
+    display: block;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+form input[type="number"],form textarea{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+main form input[type="submit"]{
+    width: 20%;
+    padding:10px;
+    margin-left: 35%;
+    background-color: rgb(80, 155, 80);
+    border-radius: 20px;
+    color: white;
+}
+
+main form input[type="submit"]:hover{
+    background-color: green;
+}
+
