@@ -2,7 +2,8 @@
 <html>
     <head>
         <title>Página de inicio</title>
-        <link rel="stylesheet" type="text/css" href="estilo/estilo_museo.css"/>
+        <link rel="stylesheet" type="text/css" href="estilo/header_body_footer.css"/>
+        <link rel="stylesheet" type="text/css" href="estilo/experiencias.css"/>
     </head>
     <body>
         <header>
@@ -44,55 +45,63 @@
 
             <!--Imagino que en esta práctica solo habrá un form y con PHP
             ya se irán cargando los diferentes -->
+            <section id="tu_opinion"> 
+                <h2>¿Quieres contar tu experiencia en el museo?</h2>
+                <p id="formulario">
+                    En este formulario podrás contar tu experiencia, además de 
+                    valorar el museo con diversas preguntas a las que tendrás que responder.
+                </p>
 
-            <h2>¿Quieres contar tu experiencia en el museo?</h2>
-            <p>
-                En este formulario podrás contar tu experiencia, además de 
-                valorar el museo con diversas preguntas a las que tendrás que responder.
-            </p>
+                <!--Duda de lo del for en el form y si está bien este form-->
+                <form action="" method="post">
 
-            <!--Duda de lo del for en el form y si está bien este form-->
-            <form action="" method="post">
+                    <label id="recomendar" for="experiencia">¿Qué tan satisfactoria te ha parecido la
+                        experiencia del 1 al 10?
+                    </label>
 
-                <label for="experiencia">¿Qué tan satisfactoria te ha parecido la
-                    experiencia del 1 al 10?
-                </label>
+                    <!--Quería poner input type range pero no salian los numeritos al ir
+                    seleccionado, investigue y debia ser con JS, entonces de momento lo dejo como
+                    number no?-->
+                    <input type="number" id="experiencia" min="1" max="10"/>
 
-                <!--Quería poner input type range pero no salian los numeritos al ir
-                seleccionado, investigue y debia ser con JS, entonces de momento lo dejo como
-                number no?-->
-                <input type="number" id="experiencia" min="1" max="10"/>
+                    <label id="radio">
+                        <p>¿Recomendarías este museo a conocidos o familiares?</p>
+                        <label for="recomendacion1">Sí, tanto a familiares como cualquier otra persona</label>
+                        <input type="radio" id="recomendacion1" name="rec" value="todos"/>
 
-                <label>
-                    <p>¿Recomendarías este museo a conocidos o familiares?</p>
-                    <label for="recomendacion1">Sí, tanto a familiares como cualquier otra persona</label>
-                    <input type="radio" id="recomendacion1" name="rec" value="todos"/>
+                        <label for="recomendacion2">Sí, pero solo a familiares</label>
+                        <input type="radio" id="recomendacion2" name="rec" value="familiares"/>
 
-                    <label for="recomendacion2">Sí, pero solo a familiares</label>
-                    <input type="radio" id="recomendacion2" name="rec" value="familiares"/>
+                        <label for="recomendacion3">Sí, pero solo a conocidos</label>
+                        <input type="radio" id="recomendacion3" name="rec" value="conocidos"/>
 
-                    <label for="recomendacion3">Sí, pero solo a conocidos</label>
-                    <input type="radio" id="recomendacion3" name="rec" value="conocidos"/>
+                        <label for="recomendacion4">No, no he disfrutado de la experiencia como para recomendarlo</label>
+                        <input type="radio" id="recomendacion4" name="rec" value="nadie"/>
+                    </label>
 
-                    <label for="recomendacion4">No, no he disfrutado de la experiencia como para recomendarlo</label>
-                    <input type="radio" id="recomendacion4" name="rec" value="nadie"/>
-                </label>
+                    <label id="checkbox">
+                        <p>Por favor, selecciona cuál o cuales han sido tus exposiciónes temporales favoritas</p>
+                        <label for="arqueologia">Exposición de Arqueología</label>
+                        <input type="checkbox" id="arqueologia" value="arq"/>
 
-                <label>
-                    <p>Por favor, selecciona cuál o cuales han sido tus exposiciónes temporales favoritas</p>
-                    <label for="arqueologia">Exposición de Arqueología</label>
-                    <input type="checkbox" id="arqueologia" value="arq"/>
+                        <label for="contemporaneo">Exposición de arte Contemporáneo</label>
+                        <input type="checkbox" id="contemporaneo" value="cont"/>
 
-                    <label for="contemporaneo">Exposición de arte Contemporáneo</label>
-                    <input type="checkbox" id="contemporaneo" value="cont"/>
+                        <label for="prehistorica">Exposición de pintura prehistórica</label>
+                        <input type="checkbox" id="prehistorica" value="preh"/>
+                    </label><br>
 
-                    <label for="prehistorica">Exposición de pintura prehistórica</label>
-                    <input type="checkbox" id="prehistorica" value="preh"/>
-                </label><br>
+                    <label id="opinion" for="valoracion">Danos tu opinión más detallada, así como mejoras o sugerencias</label>
+                    <textarea id="valoracion" rows="10" cols="50"></textarea>
 
-                <label for="valoracion">Danos tu opinión más detallada, así como mejoras o sugerencias</label>
-                <textarea id="valoracion" rows="10" cols="50"></textarea>
-            </form>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+
+            <section id="opiniones">
+                <h2>Opiniones de nuestros clientes</h2>
+            </section>
+            
 
         </main>
         

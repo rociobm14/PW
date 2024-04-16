@@ -2,7 +2,8 @@
 <html>
     <head>
         <title>Página de información</title>
-        <link rel="stylesheet" type="text/css" href="estilo/estilo_museo.css"/>
+        <link rel="stylesheet" type="text/css" href="estilo/header_body_footer.css"/>
+        <link rel="stylesheet" type="text/css" href="estilo/informacion.css"/>
     </head>
     <body>
         <header>
@@ -44,13 +45,13 @@
         por otro lado los precios, ubicación e información general no?, todo separado-->
         <main>
 
-            <section>
+            <section id="apartado">
                 <h2>Horario de apertura</h2>
                 <time datetime="apertura-lunesviernes">Lunes a Viernes de 9:00h-14:30h y 16:00h-20:00h</time>
                 <time datetime="apertura-findes">Sabados y Domingos de 9:30h-15:30h y 16:00h-23:00h</time>
             </section>
 
-            <section>
+            <section id="apartado">
                 <table border="1">
                     <thead>
                         <tr>
@@ -99,12 +100,12 @@
                             <td>3</td>
                             <td>4</td>
                             <td>5</td>
-                            <td>6</td>
-                            <td>7</td>
+                            <td id="completa">6</td>
+                            <td id="completa">7</td>
                             <td></td>
                             <td></td>
                             <td>1</td>
-                            <td>2</td>
+                            <td id="completa">2</td>
                             <td>3</td>
                             <td>4</td>
                             <td>5</td>
@@ -114,28 +115,28 @@
                             <td></td>
                             <td></td>
                             <td>1</td>
-                            <td>2</td>
+                            <td id="cierre">2</td>
                         </tr>
 
                         <tr>
                             <td>8</td>
                             <td>9</td>
-                            <td>10</td>
-                            <td>11</td>
+                            <td id="media">10</td>
+                            <td id="media">11</td>
                             <td>12</td>
                             <td>13</td>
                             <td>14</td>
                             <td>6</td>
                             <td>7</td>
                             <td>8</td>
-                            <td>9</td>
+                            <td id="media">9</td>
                             <td>10</td>
                             <td>11</td>
-                            <td>12</td>
+                            <td id="media">12</td>
                             <td>3</td>
                             <td>4</td>
-                            <td>5</td>
-                            <td>6</td>
+                            <td id="completa">5</td>
+                            <td id="completa">6</td>
                             <td>7</td>
                             <td>8</td>
                             <td>9</td>
@@ -148,10 +149,10 @@
                             <td>18</td>
                             <td>19</td>
                             <td>20</td>
-                            <td>21</td>
-                            <td>13</td>
+                            <td id="completa">21</td>
+                            <td id="media">13</td>
                             <td>14</td>
-                            <td>15</td>
+                            <td id="media">15</td>
                             <td>16</td>
                             <td>17</td>
                             <td>18</td>
@@ -171,27 +172,27 @@
                             <td>24</td>
                             <td>25</td>
                             <td>26</td>
-                            <td>27</td>
-                            <td>28</td>
+                            <td id="cierre">27</td>
+                            <td id="cierre">28</td>
                             <td>20</td>
                             <td>21</td>
                             <td>22</td>
                             <td>23</td>
                             <td>24</td>
-                            <td>25</td>
-                            <td>26</td>
+                            <td id="completa">25</td>
+                            <td id="completa">26</td>
                             <td>17</td>
                             <td>18</td>
                             <td>19</td>
                             <td>20</td>
                             <td>21</td>
-                            <td>22</td>
-                            <td>23</td>
+                            <td id="media">22</td>
+                            <td id="media">23</td>
                         </tr>
 
                         <tr>
-                            <td>29</td>
-                            <td>30</td>
+                            <td id="cierre">29</td>
+                            <td id="cierre">30</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -208,21 +209,35 @@
                             <td>25</td>
                             <td>26</td>
                             <td>27</td>
-                            <td>28</td>
-                            <td>29</td>
-                            <td>30</td>
+                            <td id="completa">28</td>
+                            <td id="completa">29</td>
+                            <td id="completa">30</td>
                         </tr>
                     </tbody>
 
-                    <tfoot>
-                        <td colspan="25">Leyenda</td>
-                    </tfoot>
+                    <section id="leyenda">
+                        <h3>Leyenda</h3>
+                        <section>
+                            <p id="nombre">Cierre completo</p>
+                            <p id="rojo"></p>
+                        </section>
+
+                        <section>
+                            <p id="nombre">Apertura de mañanas</p>
+                            <p id="naranja"></p>
+                        </section>
+
+                        <section>
+                            <p id="nombre">Apertura todo el día</p>
+                            <p id="verde"></p>
+                        </section>
+                    </section>
 
 
                 </table>
             </section>
 
-            <section>
+            <section id="apartado">
                 <h3>Precios</h3>
                 <table border="1">
                     <thead>
@@ -257,20 +272,10 @@
                 </table>
             </section>
 
-            <section>
+            <section id="apartado">
                 <h2>¿Dónde nos ubicamos?</h2>
                 <address>C. de Ruiz de Alarcón, 23, Retiro, 28014 Madrid</address>
             </section>
-
-            <aside>
-                <h3>Otros enlaces de interés</h3>
-                <nav>
-                    <ul>
-                        <li><a href="">Enlace interés</a></li>
-                        <li><a href="">Enlace interés</a></li>
-                    </ul>
-                </nav>
-            </aside>
             
         </main>
 
