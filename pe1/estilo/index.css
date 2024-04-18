@@ -69,3 +69,38 @@
     text-shadow: 2px 2px 4px rgba(35, 165, 68, 0.5);
 
 }
+
+@media (max-width: 1000px) {
+    #bienvenida {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #bienvenida h1 {
+        font-size: 30px;
+    }
+
+    #bienvenida p {
+        font-size: 20px;
+    }
+
+    #obrainvitada {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    #obrainvitada h4 {
+        font-size: 16px;
+    }
+
+    #autora {
+        font-size: 30px;
+    }
+
+    #diseños {
+        font-size: 20px;
+        margin-left: 0;
+    }
+}

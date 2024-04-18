@@ -1,0 +1,36 @@
+figure img{
+    display: block;
+    margin: auto;
+    width: 700px;
+    height: 700px;
+    border: solid 15px rgb(130, 140, 187);
+    border-style:groove;
+}
+
+#contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+#ficha_tecnica{
+    width: 66.66%;
+    margin-right: 100px;
+    background-color: rgb(207, 224, 240, 0.8);
+    padding: 30px;
+}
+
+aside{
+    width: 33.33%;
+    background-color: rgb(207, 224, 240, 0.8);
+    padding: 30px;
+}
+
+#ficha_tecnica h2, aside h2{
+    font-size: 40px;
+    font-style: italic;
+    color: rgb(93, 70, 116);
+    margin-top: 0px;
+}
+
+
+

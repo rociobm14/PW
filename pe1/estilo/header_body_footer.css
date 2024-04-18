@@ -130,3 +130,28 @@ footer{
 #contacto:hover, #practica:hover{
     color: rgb(129, 51, 51); /* Color del texto cuando se pasa el ratón sobre él */
 }
+
+@media (max-width: 1000px) {
+    #logo {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    header form {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav a {
+        padding: 10px 0; /* Espacio interior */
+    }
+
+    #contacto, #practica {
+        margin-left: 0;
+    }
+}
