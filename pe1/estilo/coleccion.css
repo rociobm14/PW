@@ -94,7 +94,20 @@ figure img{
 
 figcaption{
     text-align: center;
-    padding: 10px;
+}
+
+figcaption h3, figcaption p, figcaption time{
+    margin: 10px;
+    font-style: italic;
+}
+
+#siguientes a{
+    text-decoration: none;
+    color: rgb(116, 88, 141);
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 100px;
 }
 
 

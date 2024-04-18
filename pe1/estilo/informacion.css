@@ -4,10 +4,14 @@ main {
 
 }
 
+#apartado time{
+    display: block;
+}
+
 #apartado{
     text-align: center;
     margin-bottom: 20px;
-    padding: 3px;
+    padding: 10px;
     border-radius: 20px;
     border:solid;
     border-color: rgb(53, 53, 70);
