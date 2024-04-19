@@ -7,30 +7,25 @@
     </head>
     <body>
         <header>
-
             <section id="logo">
                 <img src="imagenes/IMG_4819.jpg" alt="logotipo del museo"/>
                 <h1>Museo WildFemArte</h1>
-
             </section>
             
-    
             <form>
                 <h3>Inicio de sesión</h3>
+                
                 <label for="Email">Email</label>
-                <input type="email" id="Email" name="emailusuario" placeholder="Introduzca su email"/>
+                <input type="email" id="Email" name="emailusuario" placeholder="Introduzca su email" required/>
 
                 <label for="Contraseña">Contraseña</label>
-                <input type="password" id="Contraseña" name="contraseñausuario" placeholder="Introduzca la contraseña"/>
+                <input type="password" id="Contraseña" name="contraseñausuario" placeholder="Introduzca la contraseña"required/>
 
                 <input type="submit" id="InicioSesion" name="Iniciar sesión"/>
 
-                <!--Está bien esto para el enlace a darse de alta?-->
                 <a href="altausuarios.html">¡Regístrate aquí!</a>
             </form>
 
-
-            <!--Menú de navegación para las distintas opciones-->
             <nav>
                 <a href="index.html">Inicio</a>
                 <a href="coleccion.html">Colección</a>
@@ -41,10 +36,7 @@
             </nav>
         </header>
 
-        <!--Duda: aqui tiene que ir, el horario por un lado, por otro lado la tabla,
-        por otro lado los precios, ubicación e información general no?, todo separado-->
         <main>
-
             <section id="apartado">
                 <h2>Horario de apertura</h2>
                 <time datetime="apertura-lunesviernes">Lunes a Viernes de 9:00h-14:30h y 16:00h-20:00h</time>
@@ -214,45 +206,39 @@
                             <td id="completa">30</td>
                         </tr>
                     </tbody>
-
-                    <section id="leyenda">
-                        <h3>Leyenda</h3>
-                        <section>
-                            <p id="nombre">Cierre completo</p>
-                            <p id="rojo"></p>
-                        </section>
-
-                        <section>
-                            <p id="nombre">Apertura de mañanas</p>
-                            <p id="naranja"></p>
-                        </section>
-
-                        <section>
-                            <p id="nombre">Apertura todo el día</p>
-                            <p id="verde"></p>
-                        </section>
+                </table>
+                <section id="leyenda">
+                    <h3>Leyenda</h3>
+                    <section>
+                        <p id="nombre">Cierre completo</p>
+                        <p id="rojo"></p>
                     </section>
 
+                    <section>
+                        <p id="nombre">Apertura de mañanas</p>
+                        <p id="naranja"></p>
+                    </section>
 
-                </table>
+                    <section>
+                        <p id="nombre">Apertura todo el día</p>
+                        <p id="verde"></p>
+                    </section>
+                </section>
             </section>
 
             <section id="apartado">
                 <h3>Precios</h3>
                 <table border="1">
                     <thead>
-
                         <tr>
                             <th></th>
                             <th>Menores</th>
                             <th>Estudiantes</th>
                             <th>Adultos</th>
                         </tr>
-
                     </thead>
                    
                     <tbody>
-
                         <tr>
                             <td>Lunes-Viernes</td>
                             <td>5€</td>
@@ -266,9 +252,7 @@
                             <td>14€</td>
                             <td>30€</td>
                         </tr>
-                        
                     </tbody>
-                    
                 </table>
             </section>
 
@@ -276,13 +260,11 @@
                 <h2>¿Dónde nos ubicamos?</h2>
                 <address>C. de Ruiz de Alarcón, 23, Retiro, 28014 Madrid</address>
             </section>
-            
         </main>
 
         <footer>
             <a id="contacto" href="contacto.html" title="Contacta con nosotros aquí">Contacto</a>
             <a id ="practica" href="como_se_hizo.pdf" title="¿Cómo se hizo la práctica?">Cómo se hizo</a>
         </footer>
-        
     </body>
 </html>

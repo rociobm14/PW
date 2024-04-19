@@ -7,30 +7,25 @@
     </head>
     <body>
         <header>
-
             <section id="logo">
                 <img src="imagenes/IMG_4819.jpg" alt="logotipo del museo"/>
                 <h1>Museo WildFemArte</h1>
-
             </section>
             
-    
             <form>
                 <h3>Inicio de sesión</h3>
+                
                 <label for="Email">Email</label>
-                <input type="email" id="Email" name="emailusuario" placeholder="Introduzca su email"/>
+                <input type="email" id="Email" name="emailusuario" placeholder="Introduzca su email" required/>
 
                 <label for="Contraseña">Contraseña</label>
-                <input type="password" id="Contraseña" name="contraseñausuario" placeholder="Introduzca la contraseña"/>
+                <input type="password" id="Contraseña" name="contraseñausuario" placeholder="Introduzca la contraseña"required/>
 
                 <input type="submit" id="InicioSesion" name="Iniciar sesión"/>
 
-                <!--Está bien esto para el enlace a darse de alta?-->
                 <a href="altausuarios.html">¡Regístrate aquí!</a>
             </form>
 
-
-            <!--Menú de navegación para las distintas opciones-->
             <nav>
                 <a href="index.html">Inicio</a>
                 <a href="coleccion.html">Colección</a>
@@ -42,26 +37,18 @@
         </header>
 
         <main>
-
-            <!--Imagino que en esta práctica solo habrá un form y con PHP
-            ya se irán cargando los diferentes -->
             <section id="tu_opinion"> 
                 <h2>¿Quieres contar tu experiencia en el museo?</h2>
+
                 <p id="formulario">
                     En este formulario podrás contar tu experiencia, además de 
                     valorar el museo con diversas preguntas a las que tendrás que responder.
                 </p>
 
-                <!--Duda de lo del for en el form y si está bien este form-->
                 <form action="" method="post">
-
                     <label id="recomendar" for="experiencia">¿Qué tan satisfactoria te ha parecido la
                         experiencia del 1 al 10?
                     </label>
-
-                    <!--Quería poner input type range pero no salian los numeritos al ir
-                    seleccionado, investigue y debia ser con JS, entonces de momento lo dejo como
-                    number no?-->
                     <input type="number" id="experiencia" min="1" max="10"/>
 
                     <label id="radio">
@@ -89,7 +76,7 @@
 
                         <label for="prehistorica">Exposición de pintura prehistórica</label>
                         <input type="checkbox" id="prehistorica" value="preh"/>
-                    </label><br>
+                    </label>
 
                     <label id="opinion" for="valoracion">Danos tu opinión más detallada, así como mejoras o sugerencias</label>
                     <textarea id="valoracion" rows="10" cols="50"></textarea>
@@ -101,14 +88,11 @@
             <section id="opiniones">
                 <h2>Opiniones de nuestros clientes</h2>
             </section>
-            
-
         </main>
         
         <footer>
             <a id="contacto" href="contacto.html" title="Contacta con nosotros aquí">Contacto</a>
             <a id ="practica" href="como_se_hizo.pdf" title="¿Cómo se hizo la práctica?">Cómo se hizo</a>
         </footer>
-
     </body>
 </html>

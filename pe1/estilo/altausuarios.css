@@ -1,8 +1,8 @@
 main {
-    width: 100%;
     max-width: 600px;
-    margin: 10px auto; /* 10px de margen superior e inferior, auto para los márgenes izquierdo y derecho */
-    padding: 20px;
+    margin: 20px auto; /* 10px de margen superior e inferior, auto para los márgenes izquierdo y derecho */
+    padding: 40px;
+    border-radius: 20px;
     background-color:rgb(207, 224, 240, 0.8);
 }
 
@@ -31,6 +31,7 @@ main form input {
     border: 1px solid white;
     border-radius: 5px;
     font-size: 16px;
+    margin-bottom: 20px;
 }
 
 main form input[type="submit"] {

@@ -7,30 +7,26 @@
     </head>
     <body>
         <header>
-
             <section id="logo">
                 <img src="imagenes/IMG_4819.jpg" alt="logotipo del museo"/>
                 <h1>Museo WildFemArte</h1>
 
             </section>
             
-    
             <form>
                 <h3>Inicio de sesión</h3>
+
                 <label for="Email">Email</label>
-                <input type="email" id="Email" name="emailusuario" placeholder="Introduzca su email"/>
+                <input type="email" id="Email" name="emailusuario" placeholder="Introduzca su email" required/>
 
                 <label for="Contraseña">Contraseña</label>
-                <input type="password" id="Contraseña" name="contraseñausuario" placeholder="Introduzca la contraseña"/>
+                <input type="password" id="Contraseña" name="contraseñausuario" placeholder="Introduzca la contraseña"required/>
 
                 <input type="submit" id="InicioSesion" name="Iniciar sesión"/>
 
-                <!--Está bien esto para el enlace a darse de alta?-->
                 <a href="altausuarios.html">¡Regístrate aquí!</a>
             </form>
 
-
-            <!--Menú de navegación para las distintas opciones-->
             <nav>
                 <a href="index.html">Inicio</a>
                 <a href="coleccion.html">Colección</a>
@@ -42,29 +38,26 @@
         </header>
 
         <main>
-
-            <!--Es necesario poner todos los type de inputs que hemos visto(url, search,
-                color...)-->
-
             <h2>Formulario para ser un miembro de nuestro museo</h2>
+
             <form action="alta_exitosa.html" method="post">
                 <label for="Nombre">Nombre</label>
-                <input type="text" id="Nombre" name="nombre" placeholder="Nombre"/><br>
+                <input type="text" id="Nombre" name="nombre" placeholder="Nombre"/>
                 
                 <label for="Apellidos">Apellidos</label>
-                <input type="text" id="Apellidos" name="apellidos" placeholder="Apellidos"/><br>
+                <input type="text" id="Apellidos" name="apellidos" placeholder="Apellidos"/>
                  
                 <label for="Correo">Correo Electronico</label>
-                <input type="email" id="Correo" name="correo" placeholder="Correo Electronico"/><br>
+                <input type="email" id="Correo" name="correo" placeholder="Correo Electronico"/>
 
                 <label for="Contraseña">Contraseña</label>
-                <input type="password" id="Contraseña" name="contras" placeholder="Contraseña"/><br>
+                <input type="password" id="Contraseña" name="contras" placeholder="Contraseña"/>
 
                 <label for="Telefono">Telefono</label>
-                <input type="tel" id="Telefono" name="telefono" placeholder="Numero de telefono"/><br>
+                <input type="tel" id="Telefono" name="telefono" placeholder="Numero de telefono"/>
 
                 <label for="Nacimiento">Fecha de Nacimiento</label>
-                <input type="date" id="Nacimiento" name="nacimiento"/><br>
+                <input type="date" id="Nacimiento" name="nacimiento"/>
 
                 <datalist id="conocermuseo">
                     <option value="Amigos/as">
@@ -73,17 +66,15 @@
                     <option value="Otros">
                 </datalist>
                 <label for="texto">¿Cómo conociste nuestro museo? </label>
-                <input type="text" id="texto" list="conocermuseo"><br>
+                <input type="text" id="texto" list="conocermuseo">
 
                 <input type="submit" value="Registrarse"> 
             </form>
-        
         </main>
 
         <footer>
             <a id="contacto" href="contacto.html" title="Contacta con nosotros aquí">Contacto</a>
             <a id ="practica" href="como_se_hizo.pdf" title="¿Cómo se hizo la práctica?">Cómo se hizo</a>
         </footer>
-
     </body>
 </html>

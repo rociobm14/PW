@@ -4,6 +4,7 @@
 
 
 aside{
+    width: 15%;
     margin-top: 20px;
     background-color: antiquewhite;
 }
@@ -32,18 +33,6 @@ nav section a{
     font-style: italic;
     text-decoration: none;
 }
-
-@media (min-width: 600px){
-    aside {
-        width: 15%;
-    }
-
-    nav section h3 {
-        margin-left: 0;
-        width: auto;
-    }
-}
-
 
 #colecciones_generales #obras{
     width: 85%;
@@ -108,6 +97,37 @@ figcaption h3, figcaption p, figcaption time{
     font-weight: bold;
     font-style: italic;
     margin-right: 100px;
+}
+
+@media (max-width: 1000px){
+    #colecciones_generales{
+        flex-direction: column;
+    }
+
+    aside{
+        width: 100%;
+    }
+
+    aside nav{
+        margin-top: 20px;
+    }
+
+    #colecciones_generales #obras{
+        width: 100%;
+    }
+
+    #colecciones_generales #obras, #todas{
+        flex-direction: column;
+    }
+
+    #colecciones_generales section article{
+        flex: 1 0 auto; 
+        width: 100%;
+    }
+
+    #siguientes a{
+        margin-right: 0;
+    }
 }
 
 

@@ -7,30 +7,25 @@
     </head>
     <body>
         <header>
-
             <section id="logo">
                 <img src="imagenes/IMG_4819.jpg" alt="logotipo del museo"/>
                 <h1>Museo WildFemArte</h1>
-
             </section>
             
-    
             <form>
                 <h3>Inicio de sesión</h3>
+                
                 <label for="Email">Email</label>
-                <input type="email" id="Email" name="emailusuario" placeholder="Introduzca su email"/>
+                <input type="email" id="Email" name="emailusuario" placeholder="Introduzca su email" required/>
 
                 <label for="Contraseña">Contraseña</label>
-                <input type="password" id="Contraseña" name="contraseñausuario" placeholder="Introduzca la contraseña"/>
+                <input type="password" id="Contraseña" name="contraseñausuario" placeholder="Introduzca la contraseña"required/>
 
                 <input type="submit" id="InicioSesion" name="Iniciar sesión"/>
 
-                <!--Está bien esto para el enlace a darse de alta?-->
                 <a href="altausuarios.html">¡Regístrate aquí!</a>
             </form>
 
-
-            <!--Menú de navegación para las distintas opciones-->
             <nav>
                 <a href="index.html">Inicio</a>
                 <a href="coleccion.html">Colección</a>
@@ -41,16 +36,9 @@
             </nav>
         </header>
 
-
         <main id="colecciones_generales">
-
-            <!--Aside para mantener el menú a la izquierda-->
-             <!--Aside para mantener el menú a la izquierda-->
              <aside>
                 <nav>
-                    <!--Divido en secciones el menú según la temática,
-                    por ahora he puesto las mismas temáticas en cada
-                    sección para ir más rápido.-->
                     <section>
                         <h3>Autores</h3>
                         <a href="coleccion_mariabe.html">María BE</a>
@@ -73,12 +61,11 @@
                     </section> 
                 </nav>
             </aside>
-            <!--no se bien como agrupar las imagenes en un mismo elemento,
-            por ahora uso un section-->
+           
             <section id="obras">
                 <h2>Obras de arte de Otoño</h2>
+
                 <section id="todas">
-                    <!--Seria correcto separarlas en articulos?-->
                     <article>
                         <figure>
                             <a href="obra1.html">
@@ -196,28 +183,18 @@
                         </figure> 
                     </article>
                 </section>
+
                 <section id="siguientes">
                     <nav>
                         <a href="siguientes_otono.html">Siguiente</a>
                     </nav>
                 </section>
-               
             </section>
-            
-
-
-            <!--navegacion para ir a las siguientes obras  duda
-            cuantas paginas debe de haber de obreas? he pensado
-            en poner 3 para la general, porque incluiria todas
-            y 2 para el resto porque son mas especificas-->
-            
         </main>
 
         <footer>
             <a id="contacto" href="contacto.html" title="Contacta con nosotros aquí">Contacto</a>
             <a id ="practica" href="como_se_hizo.pdf" title="¿Cómo se hizo la práctica?">Cómo se hizo</a>
         </footer>
-
-
     </body>
 </html>
