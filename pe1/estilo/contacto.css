@@ -1,4 +1,4 @@
-main #contacto {
+main #cont {
     width: 50%;
     text-align: center;
     margin: 10px auto;
@@ -7,18 +7,18 @@ main #contacto {
     border-radius: 20px;
 }
 
-main #contacto h2 {
+main #cont h2 {
     font-size: 30px;
     color: rgb(46, 46, 82);
     margin-bottom: 20px;
 }
 
-main #contacto p {
+main #cont p {
     font-size: 23px;
     color: black;
 }
 
-main #contacto a {
+main #cont a {
     color: rgb(35, 127, 202);
     text-decoration: none;
 }

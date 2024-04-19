@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
-        <title>Página de inicio</title>
+        <title>Página de Experiencias</title>
         <link rel="stylesheet" type="text/css" href="estilo/header_body_footer.css"/>
         <link rel="stylesheet" type="text/css" href="estilo/experiencias.css"/>
     </head>
@@ -19,7 +19,7 @@
                 <input type="email" id="Email" name="emailusuario" placeholder="Introduzca su email" required/>
 
                 <label for="Contraseña">Contraseña</label>
-                <input type="password" id="Contraseña" name="contraseñausuario" placeholder="Introduzca la contraseña"required/>
+                <input type="password" id="Contraseña" name="contraseñausuario" placeholder="Introduzca la contraseña" required/>
 
                 <input type="submit" id="InicioSesion" name="Iniciar sesión"/>
 
@@ -51,33 +51,33 @@
                     </label>
                     <input type="number" id="experiencia" min="1" max="10"/>
 
-                    <label id="radio">
-                        <p>¿Recomendarías este museo a conocidos o familiares?</p>
+                    <fieldset id="radio">
+                        <legend>¿Recomendarías este museo a conocidos o familiares?</legend>
                         <label for="recomendacion1">Sí, tanto a familiares como cualquier otra persona</label>
                         <input type="radio" id="recomendacion1" name="rec" value="todos"/>
-
+                    
                         <label for="recomendacion2">Sí, pero solo a familiares</label>
                         <input type="radio" id="recomendacion2" name="rec" value="familiares"/>
-
+                    
                         <label for="recomendacion3">Sí, pero solo a conocidos</label>
                         <input type="radio" id="recomendacion3" name="rec" value="conocidos"/>
-
+                    
                         <label for="recomendacion4">No, no he disfrutado de la experiencia como para recomendarlo</label>
                         <input type="radio" id="recomendacion4" name="rec" value="nadie"/>
-                    </label>
-
-                    <label id="checkbox">
-                        <p>Por favor, selecciona cuál o cuales han sido tus exposiciónes temporales favoritas</p>
+                    </fieldset>
+                    
+                    <fieldset id="checkbox">
+                        <legend>Por favor, selecciona cuál o cuales han sido tus exposiciónes temporales favoritas</legend>
                         <label for="arqueologia">Exposición de Arqueología</label>
                         <input type="checkbox" id="arqueologia" value="arq"/>
-
+                    
                         <label for="contemporaneo">Exposición de arte Contemporáneo</label>
                         <input type="checkbox" id="contemporaneo" value="cont"/>
-
+                    
                         <label for="prehistorica">Exposición de pintura prehistórica</label>
                         <input type="checkbox" id="prehistorica" value="preh"/>
-                    </label>
-
+                    </fieldset>
+                    
                     <label id="opinion" for="valoracion">Danos tu opinión más detallada, así como mejoras o sugerencias</label>
                     <textarea id="valoracion" rows="10" cols="50"></textarea>
 

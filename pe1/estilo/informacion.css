@@ -4,7 +4,7 @@ main {
 
 }
 
-#apartado time{
+#apartado p{
     display: block;
 }
 
@@ -27,7 +27,7 @@ main {
     margin-bottom: 10px;
 }
 
-#apartado time, #apartado address{
+#apartado p, #apartado address{
     font-size: 25px;
     font-weight: bold;
     font-style: oblique;

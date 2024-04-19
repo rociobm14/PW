@@ -39,10 +39,14 @@ form{
     font-style: italic;
 }
 
-#recomendar, #radio p, #checkbox p, #opinion{
+#recomendar, #opinion, fieldset legend{
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: bold;
+}
+
+fieldset{
+    margin-bottom: 20px;
 }
 
 #radio label, #checkbox label{
