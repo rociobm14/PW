@@ -1,13 +1,10 @@
-/* CSS body */
 body{
     background: url('../imagenes/image1.jpeg');
 }
 
-/* CSS header, común a todas las páginas*/
-
 #logo {
     display: flex;
-    align-items: center; /* Alinear verticalmente los elementos */
+    align-items: center; 
     width: 70%;
 }
 
@@ -15,12 +12,12 @@ header form{
 
     width: 19%;
     display: flex;
-    flex-direction: column; /* Cambia la dirección de los elementos a columna */
-    align-items: center; /* Alinea los elementos a la izquierda */
-    margin-left: auto; /* Mueve el formulario a la derecha del section */
+    flex-direction: column; 
+    align-items: center; 
+    margin-left: auto; 
     margin-top: -200px;
     margin-bottom: 10px;
-    background-color: rgba(28, 108, 138, 0.5); /* Color de fondo azul transparente */
+    background-color: rgba(28, 108, 138, 0.5); 
     padding-top: 5px;
     padding-bottom: 10px;
     border-style:ridge;
@@ -52,13 +49,13 @@ header form input{
 }
 
 header form #InicioSesion {
-    border: none; /* Quita el borde predeterminado */
-    border-radius: 20px; /* Hace que el botón esté redondeado */
-    background-color: blue; /* Establece el color de fondo azul */
-    color: white; /* Establece el color del texto en blanco */
-    padding: 10px 20px; /* Añade relleno para espaciar el texto del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    font-size: 16px; /* Tamaño del texto */
+    border: none; 
+    border-radius: 20px; 
+    background-color: blue;
+    color: white; 
+    padding: 10px 20px;
+    cursor: pointer; 
+    font-size: 16px; 
 }
 
 header form a{
@@ -78,8 +75,8 @@ header form a{
     font-size: 80px;
     font-weight: bold;
     color:rgb(60, 110, 110);
-    -webkit-text-stroke-width: 2px; /* Ancho del trazo del texto en navegadores webkit (Safari, Chrome, etc.) */
-    -webkit-text-stroke-color: white; /* Color del trazo del texto en navegadores webkit */
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: white; 
 }
 
 section form input{
@@ -89,26 +86,24 @@ section form input{
 
 header nav {
     display: flex;
-    justify-content: space-around; /* Espacio igual entre cada elemento */
-    width: 100%; /* Ocupar todo el ancho disponible */
-    background-color:  rgba(28, 108, 138, 0.8); /* Color de fondo del menú */
+    justify-content: space-around; 
+    width: 100%; 
+    background-color:  rgba(28, 108, 138, 0.8); 
 }
 
 header nav a {
-    padding: 5px; /* Espacio interior */
+    padding: 5px; 
     font-family:'Courier New', Courier, monospace;
     font-size: 20px;
     color: white;
-    -webkit-text-stroke-width: 1px; /* Ancho del trazo del texto en navegadores webkit (Safari, Chrome, etc.) */
-    -webkit-text-stroke-color: white; /* Color del trazo del texto en navegadores webkit */
-    text-decoration: none; /* Quitar subrayado del enlace */
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: white; 
+    text-decoration: none; 
 }
 
 header nav a:hover {
-    background-color:blue; /* Color de fondo al pasar el ratón por encima */
+    background-color:blue; 
 }
-
-/*CSS Footer, común a todas las páginas*/
 
 footer{
     margin-top: 50px;
@@ -129,7 +124,7 @@ footer{
 }
 
 #contacto:hover, #practica:hover{
-    color: rgb(129, 51, 51); /* Color del texto cuando se pasa el ratón sobre él */
+    color: rgb(129, 51, 51); 
 }
 
 @media (max-width: 1000px) {
@@ -149,7 +144,7 @@ footer{
     }
 
     header nav a {
-        padding: 10px 0; /* Espacio interior */
+        padding: 10px 0; 
     }
 
     #contacto, #practica {
