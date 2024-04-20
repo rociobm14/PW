@@ -90,6 +90,24 @@ figcaption h3, figcaption p, figcaption time{
     font-style: italic;
 }
 
+figcaption h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(93, 78, 107);
+    
+}
+
+figcaption p, figcaption time{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(93, 78, 107); 
+}
+
+figcaption cite{
+    font-weight: lighter;
+    color:black;
+}
+
 #siguientes a{
     text-decoration: none;
     color: rgb(116, 88, 141);
