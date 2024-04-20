@@ -2,13 +2,13 @@
 <html lang="es">
     <head>
         <title>Página de Experiencias</title>
-        <link rel="stylesheet" type="text/css" href="estilo/header_body_footer.css"/>
-        <link rel="stylesheet" type="text/css" href="estilo/experiencias.css"/>
+        <link rel="stylesheet" type="text/css" href="estilo/header_body_footer.css">
+        <link rel="stylesheet" type="text/css" href="estilo/experiencias.css">
     </head>
     <body>
         <header>
             <section id="logo">
-                <img src="imagenes/IMG_4819.jpg" alt="logotipo del museo"/>
+                <img src="imagenes/IMG_4819.jpg" alt="logotipo del museo">
                 <h1>Museo WildFemArte</h1>
             </section>
             
@@ -16,12 +16,12 @@
                 <h3>Inicio de sesión</h3>
                 
                 <label for="Email">Email</label>
-                <input type="email" id="Email" name="emailusuario" placeholder="Introduzca su email" required/>
+                <input type="email" id="Email" name="emailusuario" placeholder="Introduzca su email" required>
 
                 <label for="Contraseña">Contraseña</label>
-                <input type="password" id="Contraseña" name="contraseñausuario" placeholder="Introduzca la contraseña" required/>
+                <input type="password" id="Contraseña" name="contraseñausuario" placeholder="Introduzca la contraseña" required>
 
-                <input type="submit" id="InicioSesion" name="Iniciar sesión"/>
+                <input type="submit" id="InicioSesion" name="Iniciar sesión">
 
                 <a href="altausuarios.html">¡Regístrate aquí!</a>
             </form>
@@ -43,39 +43,35 @@
                 <p id="formulario">
                     En este formulario podrás contar tu experiencia, además de 
                     valorar el museo con diversas preguntas a las que tendrás que responder.
+                    La puntuación de la experiencia en el museo y su comentario, serán visibles
+                    por el resto de usuarios
                 </p>
 
                 <form action="" method="post">
                     <label id="recomendar" for="experiencia">¿Qué tan satisfactoria te ha parecido la
                         experiencia del 1 al 10?
                     </label>
-                    <input type="number" id="experiencia" min="1" max="10"/>
+                    <input type="number" id="experiencia" min="1" max="10">
 
                     <fieldset id="radio">
                         <legend>¿Recomendarías este museo a conocidos o familiares?</legend>
-                        <label for="recomendacion1">Sí, tanto a familiares como cualquier otra persona</label>
-                        <input type="radio" id="recomendacion1" name="rec" value="todos"/>
+                        <label for="recomendacion1">Sí, he disfrutado mucho la experiencia.</label>
+                        <input type="radio" id="recomendacion1" name="rec" value="Sí">
                     
-                        <label for="recomendacion2">Sí, pero solo a familiares</label>
-                        <input type="radio" id="recomendacion2" name="rec" value="familiares"/>
-                    
-                        <label for="recomendacion3">Sí, pero solo a conocidos</label>
-                        <input type="radio" id="recomendacion3" name="rec" value="conocidos"/>
-                    
-                        <label for="recomendacion4">No, no he disfrutado de la experiencia como para recomendarlo</label>
-                        <input type="radio" id="recomendacion4" name="rec" value="nadie"/>
+                        <label for="recomendacion2">No, no ha sido muy de mi agrado.</label>
+                        <input type="radio" id="recomendacion2" name="rec" value="No">
                     </fieldset>
                     
                     <fieldset id="checkbox">
                         <legend>Por favor, selecciona cuál o cuales han sido tus exposiciónes temporales favoritas</legend>
-                        <label for="arqueologia">Exposición de Arqueología</label>
-                        <input type="checkbox" id="arqueologia" value="arq"/>
+                        <label for="miniatura">Exposición de figuras miniatura</label>
+                        <input type="checkbox" id="miniatura" value="miniatura">
                     
-                        <label for="contemporaneo">Exposición de arte Contemporáneo</label>
-                        <input type="checkbox" id="contemporaneo" value="cont"/>
+                        <label for="lego">Exposición de LEGO</label>
+                        <input type="checkbox" id="lego" value="lego">
                     
-                        <label for="prehistorica">Exposición de pintura prehistórica</label>
-                        <input type="checkbox" id="prehistorica" value="preh"/>
+                        <label for="coolman">Exposición COOLMAN COFFEEMAN</label>
+                        <input type="checkbox" id="coolman" value="coolman">
                     </fieldset>
                     
                     <label id="opinion" for="valoracion">Danos tu opinión más detallada, así como mejoras o sugerencias</label>
@@ -87,6 +83,26 @@
 
             <section id="opiniones">
                 <h2>Opiniones de nuestros clientes</h2>
+
+                <article class="opinion_cliente">
+                    <h3>Dani</h3>
+                    <p><span class="label">Puntuación:</span> 9</p>
+                    <p><span class="label">Opinión:</span> Mi experiencia en el museo ha sido maravillosa, sin duda volvería a repetirla.</p>
+                </article>
+
+                <article class="opinion_cliente">
+                    <h3>María</h3>
+                    <p><span class="label">Puntuación:</span> 8 </p>
+                    <p><span class="label">Opinión:</span> Ha sido muy agradable venir aquí. El trato es excepcional
+                    y la verdad que he salido muy contenta.</p>
+                </article>
+
+                <article class="opinion_cliente">
+                    <h3>Gonzalo</h3>
+                    <p><span class="label">Puntuación:</span> 9</p>
+                    <p><span class="label">Opinión:</span> Un lugar muy agradable y acogedor al que, sin duda, debes ir si quieres 
+                        disfrutar de un rato agradable y con una gente maravillosa. ¡Qué felicidad!</p>
+                </article>
             </section>
         </main>
         

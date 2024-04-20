@@ -4,11 +4,11 @@ main {
 
 }
 
-#apartado p{
+.apartado p{
     display: block;
 }
 
-#apartado{
+.apartado{
     text-align: center;
     margin-bottom: 20px;
     padding: 10px;
@@ -20,14 +20,14 @@ main {
     background-color: rgb(207, 224, 240, 0.8);
 }
 
-#apartado h2, #apartado h3{
+.apartado h2, .apartado h3{
     color: rgb(55, 55, 82);
     font-style: italic;
     font-size: 40px;
     margin-bottom: 10px;
 }
 
-#apartado p, #apartado address{
+.apartado p, .apartado address{
     font-size: 25px;
     font-weight: bold;
     font-style: oblique;
@@ -51,15 +51,15 @@ th{
     color: white;
 }
 
-#completa{
+.completa{
     background-color: rgb(94, 150, 94);
 }
 
-#cierre{
+.cierre{
     background-color: rgb(187, 80, 80);
 }
 
-#media{
+.media{
     background-color: rgb(187, 127, 17);
 }
 
@@ -78,7 +78,7 @@ section p{
     margin-top: 0;
 }
 
-#nombre{
+.nombre{
     margin-left:40%;
     font-size: 25px;
     font-style: italic;

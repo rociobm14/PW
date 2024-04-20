@@ -28,6 +28,36 @@ main #opiniones{
     margin-bottom: 10px;
 }
 
+.opinion_cliente{
+    margin-top: 30px;
+    background-color: rgb(131, 152, 199, 0.7);
+    border-radius: 20px;
+    border: 5px solid white;
+    padding: 20px;
+}
+
+.opinion_cliente h3{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(28, 28, 68);
+    margin-top: 10px;
+}
+
+.label{
+    font-size: 20px;
+    color: rgb(20, 19, 20);
+    font-weight: bold;
+}
+
+.opinion_cliente p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-style: oblique;
+
+}
+
 
 form{
     display: flex;
@@ -77,4 +107,5 @@ main form input[type="submit"]{
 main form input[type="submit"]:hover{
     background-color: green;
 }
+
 
