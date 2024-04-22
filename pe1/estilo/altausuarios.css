@@ -37,6 +37,7 @@ main form input {
 main form input[type="submit"] {
     width: 30%;
     margin-left: 35%;
+    cursor: pointer;
     background-color: rgb(80, 155, 80);
     color: white;
 }

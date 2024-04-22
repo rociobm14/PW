@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Obra 1</title>
+        <link rel="stylesheet" type="text/css" href="estilo/header_body_footer.css">
+        <link rel="stylesheet" type="text/css" href="estilo/obra.css">
+    </head>
+    <body>
+        <header>
+            <section id="logo">
+                <img src="imagenes/IMG_4819.jpg" alt="logotipo del museo">
+                <h1>Museo WildFemArte</h1>
+            </section>
+            
+            <form>
+                <h3>Inicio de sesión</h3>
+                
+                <label for="Email">Email</label>
+                <input type="email" id="Email" name="emailusuario" placeholder="Introduzca su email" required>
+
+                <label for="Contraseña">Contraseña</label>
+                <input type="password" id="Contraseña" name="contraseñausuario" placeholder="Introduzca la contraseña" required>
+
+                <input type="submit" id="InicioSesion" name="Iniciar sesión">
+
+                <a href="altausuarios.html">¡Regístrate aquí!</a>
+            </form>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="coleccion.html">Colección</a>
+                <a href="visita.html">Visita</a>
+                <a href="exposiciones.html">Exposiciones</a>
+                <a href="informacion.html">Información</a>
+                <a href="experiencias.html">Experiencias</a>
+            </nav>
+        </header>
+
+        <main>
+            <figure>
+                <img src="imagenes/image13.jpeg" alt="obrasgeneral">
+            </figure> 
+
+            <section id="contenedor">
+                <section id="ficha_tecnica">
+                    <h2>Ficha técnica</h2>
+                    <p>Título: <cite>El pío de la mañana</cite></p>
+                    <p>Autor: <cite>María BE</cite></p>
+                    <time datetime="2022-07-21">Fecha: <cite>21-07-2022</cite></time>
+                    <p>Descripción: <cite>Esta pintura captura el encanto de una mañana temprana, 
+                       con pájaros piando alegremente para saludar al nuevo día. Los pájaros, pintados 
+                       con detalle exquisito, parecen cobrar vida en el lienzo. Sus cantos parecen casi 
+                       audibles, creando una atmósfera de serenidad y alegría.</cite>
+                    </p>
+                </section>
+                <aside>
+                    <h2>Otras obras de interés</h2>
+                    <nav>
+                        <a href="obra2.html">Corona de corales</a>
+                        <a href="obra3.html">Melena vibrante rosácea</a>
+                        <a href="obra1.html">La alegría de la pradera</a>
+                    </nav>
+                </aside>
+            </section>
+        </main>
+
+        <footer>
+            <a id="contacto" href="contacto.html" title="Contacta con nosotros aquí">Contacto</a>
+            <a id ="practica" href="como_se_hizo.pdf" title="¿Cómo se hizo la práctica?">Cómo se hizo</a>
+        </footer>
+    </body>
+</html>

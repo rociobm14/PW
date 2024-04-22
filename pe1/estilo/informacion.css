@@ -36,11 +36,10 @@ main {
 
 table{
     width: 100%;
-    border-collapse: collapse;
 }
 
 table, th, td{
-    border: 1px solid #ddd;
+    border: 1px solid white;
     padding: 8px;
     font-size: 20px;
     font-weight: bold;

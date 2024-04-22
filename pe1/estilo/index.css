@@ -25,7 +25,7 @@
     width: 30%;
     display: block;
     margin-top: 30px;
-    margin-left: 1000px;
+    margin-left: 49%;
     border: solid;
     border-width: 10px;
     background-color: rgb(122, 187, 122, 0.6);
@@ -72,7 +72,6 @@
 
 @media (max-width: 1000px) {
     #bienvenida {
-        flex-direction: column;
         width: 100%;
         margin-left: 0;
     }
@@ -101,6 +100,5 @@
 
     #diseños {
         font-size: 20px;
-        margin-left: 0;
     }
 }

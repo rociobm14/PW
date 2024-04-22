@@ -40,7 +40,7 @@
             <section id="tu_opinion"> 
                 <h2>¿Quieres contar tu experiencia en el museo?</h2>
 
-                <p id="formulario">
+                <p>
                     En este formulario podrás contar tu experiencia, además de 
                     valorar el museo con diversas preguntas a las que tendrás que responder.
                     La puntuación de la experiencia en el museo y su comentario, serán visibles
@@ -51,7 +51,7 @@
                     <label id="recomendar" for="experiencia">¿Qué tan satisfactoria te ha parecido la
                         experiencia del 1 al 10?
                     </label>
-                    <input type="number" id="experiencia" min="1" max="10">
+                    <input type="number" id="experiencia" min="1" max="10" required>
 
                     <fieldset id="radio">
                         <legend>¿Recomendarías este museo a conocidos o familiares?</legend>
@@ -75,7 +75,7 @@
                     </fieldset>
                     
                     <label id="opinion" for="valoracion">Danos tu opinión más detallada, así como mejoras o sugerencias</label>
-                    <textarea id="valoracion" rows="10" cols="50"></textarea>
+                    <textarea id="valoracion" rows="10" cols="50" required></textarea>
 
                     <input type="submit" value="Enviar">
                 </form>

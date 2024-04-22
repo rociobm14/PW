@@ -13,6 +13,50 @@ main #tu_opinion{
     background-color: rgb(207, 224, 240, 0.8);
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#recomendar, #opinion, fieldset legend{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+fieldset{
+    margin-bottom: 20px;
+}
+
+#radio label, #checkbox label{
+    display: block;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+form input[type="number"],form textarea{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+main form input[type="submit"]{
+    width: 20%;
+    padding:10px;
+    margin-left: 35%;
+    background-color: rgb(80, 155, 80);
+    border-radius: 20px;
+    color: white;
+}
+
+main form input[type="submit"]:hover{
+    background-color: green;
+}
+
 main #opiniones{
     padding: 20px;
     margin-left: 30px;
@@ -55,57 +99,12 @@ main #opiniones{
     font-weight: bold;
     color: white;
     font-style: oblique;
-
 }
 
-
-form{
-    display: flex;
-    flex-direction: column;
-}
-
-#formulario{
+#tu_opinion p{
     font-size: 20px;
     font-style: italic;
 }
 
-#recomendar, #opinion, fieldset legend{
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-fieldset{
-    margin-bottom: 20px;
-}
-
-#radio label, #checkbox label{
-    display: block;
-    font-size: 20px;
-    font-style: italic;
-}
-
-
-form input[type="number"],form textarea{
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 4px;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-main form input[type="submit"]{
-    width: 20%;
-    padding:10px;
-    margin-left: 35%;
-    background-color: rgb(80, 155, 80);
-    border-radius: 20px;
-    color: white;
-}
-
-main form input[type="submit"]:hover{
-    background-color: green;
-}
 
 

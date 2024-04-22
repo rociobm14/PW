@@ -8,6 +8,35 @@ body{
     width: 70%;
 }
 
+#logo img{
+    width: 120px;
+    height: 120px;
+}
+
+@keyframes colorChange {
+    0% { color: rgb(60, 110, 110); }
+    50% { color: rgb(139, 120, 139); }
+    100% { color: rgb(69, 168, 168); }
+}
+
+#logo h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(60, 110, 110);
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: white; 
+    animation: colorChange 5s infinite;
+}
+
+#logo h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 80px;
+    font-weight: bold;
+    color:rgb(60, 110, 110);
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: white; 
+}
 header form{
 
     width: 19%;
@@ -65,29 +94,9 @@ header form a{
 }
 
 
-#logo img{
-    width: 120px;
-    height: 120px;
-}
-
-#logo h1{
-    font-family: 'Indie Flower', cursive;
-    font-size: 80px;
-    font-weight: bold;
-    color:rgb(60, 110, 110);
-    -webkit-text-stroke-width: 2px; 
-    -webkit-text-stroke-color: white; 
-}
-
-section form input{
-    display: block;
-}
-
-
 header nav {
     display: flex;
     justify-content: space-around; 
-    width: 100%; 
     background-color:  rgba(28, 108, 138, 0.8); 
 }
 
@@ -148,6 +157,6 @@ footer{
     }
 
     #contacto, #practica {
-        margin-left: 0;
+        margin-left: 10px;
     }
 }

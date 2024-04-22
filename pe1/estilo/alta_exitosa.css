@@ -1,3 +1,12 @@
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+main {
+    animation: fadeIn 1s ease-in;
+}
+
 main {
     text-align: center;
     background-color: rgb(207, 224, 240, 0.8);

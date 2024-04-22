@@ -1,3 +1,13 @@
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#todas {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
 #colecciones_generales{
     display: flex;
 }
@@ -34,7 +44,7 @@ nav section a{
     text-decoration: none;
 }
 
-#colecciones_generales #obras{
+#obras{
     width: 85%;
     margin-top: 20px;
     background-color:rgb(207, 224, 240, 0.8);
@@ -53,22 +63,21 @@ nav section a{
 }
 
 
-#colecciones_generales #obras, #todas{
+#obras, #todas{
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-#colecciones_generales section article{
+#todas article{
     flex: 1 0 30%; 
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-    width: 200px;
 }
 
 figure{
-    border: 1px solid #ddd; 
+    border: 1px solid white; 
     border-radius: 10px; 
     padding: 5px;
     margin: 0;
@@ -132,10 +141,6 @@ figcaption cite{
 
     #colecciones_generales #obras{
         width: 100%;
-    }
-
-    #colecciones_generales #obras, #todas{
-        flex-direction: column;
     }
 
     #colecciones_generales section article{
