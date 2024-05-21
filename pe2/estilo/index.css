@@ -1,0 +1,104 @@
+#bienvenida{
+    display: flex;
+    width:50%;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 20px;
+    background-color:  rgba(28, 108, 138, 0.75);
+    border: solid;
+    border-style:dashed;
+    border-radius: 30px;
+    color: white;
+}
+
+#bienvenida h1{
+    font-size: 50px;
+    font-style: oblique;
+}
+
+#bienvenida p{
+    font-size: 30px;
+    font-style: italic;
+}
+
+#obrainvitada{
+    width: 30%;
+    display: block;
+    margin-top: 30px;
+    margin-left: 49%;
+    border: solid;
+    border-width: 10px;
+    background-color: rgb(122, 187, 122, 0.6);
+    border-radius: 30px;
+    border-color: rgb(122, 187, 122);
+    border-style: dotted;
+}
+
+#obrainvitada h4 {
+    margin-left: 20px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#autora{
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    margin-top: 1px;
+    margin-bottom: 0px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #34495e;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(35, 165, 68, 0.5);
+}
+
+#diseños{
+
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    margin-top: 0px;
+    margin-left: 27px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #34495e;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(35, 165, 68, 0.5);
+
+}
+
+@media (max-width: 1000px) {
+    #bienvenida {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #bienvenida h1 {
+        font-size: 30px;
+    }
+
+    #bienvenida p {
+        font-size: 20px;
+    }
+
+    #obrainvitada {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    #obrainvitada h4 {
+        font-size: 16px;
+    }
+
+    #autora {
+        font-size: 30px;
+    }
+
+    #diseños {
+        font-size: 20px;
+    }
+}

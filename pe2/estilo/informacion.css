@@ -1,0 +1,106 @@
+main {
+    width: 80%;
+    margin: 10px auto;
+
+}
+
+.apartado p{
+    display: block;
+}
+
+.apartado{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border:solid;
+    border-color: rgb(53, 53, 70);
+    border-style: dotted;
+    border-width: 7px;
+    background-color: rgb(207, 224, 240, 0.8);
+}
+
+.apartado h2, .apartado h3{
+    color: rgb(55, 55, 82);
+    font-style: italic;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.apartado p, .apartado address{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+
+table{
+    width: 100%;
+}
+
+table, th, td{
+    border: 1px solid white;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+th{
+    background-color: rgb(99, 99, 129);
+    color: white;
+}
+
+.completa{
+    background-color: rgb(94, 150, 94);
+}
+
+.cierre{
+    background-color: rgb(187, 80, 80);
+}
+
+.media{
+    background-color: rgb(187, 127, 17);
+}
+
+#leyenda section{
+    display: flex;
+    align-items: center;
+}
+
+#leyenda h3{
+    font-size: 25px;
+}
+
+section p{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 0;
+}
+
+.nombre{
+    margin-left:40%;
+    font-size: 25px;
+    font-style: italic;
+}
+
+#rojo, #naranja, #verde{
+    width: 20px;
+    height: 20px;
+    border: solid;
+}
+
+#rojo {
+    border-color: rgb(187, 80, 80);
+    background-color: rgb(187, 80, 80);
+}
+
+#naranja {
+    border-color: rgb(187, 127, 17);
+    background-color: rgb(187, 127, 17);
+}
+
+#verde {
+    border-color: rgb(94, 150, 94);
+    background-color: rgb(94, 150, 94);
+}
+

@@ -1,0 +1,33 @@
+.contacto {
+    width: 50%;
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: rgb(207, 224, 240, 0.8);
+    border-radius: 20px;
+}
+
+.contacto h2 {
+    font-size: 30px;
+    color: rgb(46, 46, 82);
+    margin-bottom: 20px;
+}
+.contacto span{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(69, 69, 97);
+    margin-right: 10px;
+}
+
+.contacto p {
+    font-size: 23px;
+    font-style: oblique;
+    font-weight: bold;
+    color: black;
+}
+
+.contacto a {
+    color: rgb(35, 127, 202);
+    text-decoration: none;
+}

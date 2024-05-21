@@ -1,0 +1,170 @@
+body{
+    background: url('../imagenes/image1.jpeg');
+}
+
+#logo {
+    display: flex;
+    align-items: center; 
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+#logo img{
+    width: 120px;
+    height: 120px;
+}
+
+@keyframes colorChange {
+    0% { color: rgb(60, 110, 110); }
+    50% { color: rgb(139, 120, 139); }
+    100% { color: rgb(69, 168, 168); }
+}
+
+#logo h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(60, 110, 110);
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: white; 
+    animation: colorChange 5s infinite;
+}
+
+#logo h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 80px;
+    font-weight: bold;
+    color:rgb(60, 110, 110);
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: white; 
+}
+header form{
+
+    width: 19%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-left: auto; 
+    margin-top: -200px;
+    margin-bottom: 10px;
+    background-color: rgba(28, 108, 138, 0.5); 
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-style:ridge;
+    border-color: rgba(28, 108, 138, 0.5);
+    border-width: 10px;
+
+}
+
+header form h3{
+    font-family: 'Indie Flower', cursive;
+    font-style: italic;
+    font-size: 30px;
+    color: white;
+}
+
+header form label{
+
+    font-family: 'Indie Flower', cursive;
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+
+}
+
+header form input{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+header form #InicioSesion, header form #CerrarSesion {
+    border: none; 
+    border-radius: 20px; 
+    background-color: blue;
+    color: white; 
+    padding: 10px 20px;
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+header form a{
+    color: white;
+    font-size: 21px;
+    font-weight: bold; 
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-around; 
+    background-color:  rgba(28, 108, 138, 0.8); 
+}
+
+header nav a {
+    padding: 5px; 
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: white; 
+    text-decoration: none; 
+}
+
+header nav a:hover {
+    background-color:blue; 
+}
+
+footer{
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgb(207, 224, 240, 0.8);;
+}
+
+#contacto, #practica{
+    margin-left: -200px;
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(74, 74, 114);
+    font-style: italic;
+}
+
+#practica{
+    margin-left: 200px;
+}
+
+#contacto:hover, #practica:hover{
+    color: rgb(129, 51, 51); 
+}
+
+.usuario{
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+@media (max-width: 1000px) {
+    #logo {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    header form {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav a {
+        padding: 10px 0; 
+    }
+
+    #contacto, #practica {
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,110 @@
+main{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+main #tu_opinion{
+    padding: 20px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: rgb(207, 224, 240, 0.8);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#recomendar, #opinion, fieldset legend{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+fieldset{
+    margin-bottom: 20px;
+}
+
+#radio label, #checkbox label{
+    display: block;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+form input[type="number"],form textarea{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+main form input[type="submit"]{
+    width: 20%;
+    padding:10px;
+    margin-left: 35%;
+    background-color: rgb(80, 155, 80);
+    border-radius: 20px;
+    color: white;
+}
+
+main form input[type="submit"]:hover{
+    background-color: green;
+}
+
+main #opiniones{
+    padding: 20px;
+    margin-left: 30px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: rgb(207, 224, 240, 0.8);
+}
+
+#tu_opinion h2, #opiniones h2{
+    color: rgb(46, 46, 82);
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.opinion_cliente{
+    margin-top: 30px;
+    background-color: rgb(131, 152, 199, 0.7);
+    border-radius: 20px;
+    border: 5px solid white;
+    padding: 20px;
+}
+
+.opinion_cliente h3{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(28, 28, 68);
+    margin-top: 10px;
+}
+
+.label{
+    font-size: 20px;
+    color: rgb(20, 19, 20);
+    font-weight: bold;
+}
+
+.opinion_cliente p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-style: oblique;
+}
+
+#tu_opinion p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+
