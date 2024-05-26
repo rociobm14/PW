@@ -1,5 +1,14 @@
 <aside>
     <nav>
+       <?php
+
+            if(isset($_SESSION['usuario']) && $_SESSION['usuario']['tipo_usuario'] == 'administrador'){
+                echo '<section>';
+                echo '<a href="aniadir_obra.php">Añadir Obra</a>';
+                echo '</section>';
+            }
+       
+       ?>
         <section>
             <h3>Autores</h3>
             <a href="coleccion_mariabe.php">María BE</a>

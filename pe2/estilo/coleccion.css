@@ -76,6 +76,17 @@ nav section a{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
 }
 
+a.modificar, a.eliminar{
+    font-size: 20px;
+    margin-right: 60px;
+    text-decoration: none;
+    border: 1px solid blue;
+    border-radius: 20px;
+    background-color: rgb(149, 178, 189);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 figure{
     border: 1px solid white; 
     border-radius: 10px; 

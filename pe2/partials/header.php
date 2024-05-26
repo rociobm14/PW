@@ -30,10 +30,11 @@
 
             echo '<form action="#" method="POST">';
             echo '<h3>Inicio de sesión</h3>';
+            echo '<div id="errorMensaje" class="error"></div>';
             echo '<label for="Email">Email</label>';
-            echo '<input type="email" id="Email" name="emailusuario" placeholder="Introduzca su email" required>';
+            echo '<input type="email" id="Email" name="emailusuario" placeholder="Introduzca su email">';
             echo '<label for="Contraseña">Contraseña</label>';
-            echo '<input type="password" id="Contraseña" name="contraseñausuario" placeholder="Introduzca la contraseña" required>';
+            echo '<input type="password" id="Contraseña" name="contraseñausuario" placeholder="Introduzca la contraseña">';
             echo '<input type="submit" id="InicioSesion" name="iniciosesion">';
             echo '<a href="altausuarios.php">¡Regístrate aquí!</a>'; 
             echo '</form>';

@@ -41,7 +41,7 @@
                         echo '<article class="opinion_cliente">';
                         echo '<h3>' . $_SESSION['usuario']['nombre'] . '</h3>';
                         echo '<p><span class="label"> Puntuación: </span> ' . $experiencia_usuario['satisfaccion'] . '</p>';
-                        echo '<p><span class="label">Opinión:</span> ' . $experiencia_usuario['opinion'] . '</p>';
+                        echo '<p><span class="label"> Opinión: </span> ' . $experiencia_usuario['opinion'] . '</p>';
                         echo '</article>';
                         echo '</section>';
                     }
@@ -149,7 +149,7 @@
                             echo '<article class="opinion_cliente">';
                             echo '<h3>' . $usuario['nombre'] . '</h3>';
                             echo '<p><span class="label">Puntuación: </span>' . $experiencia['satisfaccion'] . '</p>';
-                            echo '<p><span class="label">Opinión:</span>' . $experiencia['opinion'] . '</p>';
+                            echo '<p><span class="label">Opinión: </span>' . $experiencia['opinion'] . '</p>';
                             echo '</article>';
                         
                         }

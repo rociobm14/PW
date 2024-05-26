@@ -1,144 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Colección de obras de arte Eva BE</title>
+        <title>Colección de obras de arte</title>
         <link rel="stylesheet" type="text/css" href="estilo/header_body_footer.css">
         <link rel="stylesheet" type="text/css" href="estilo/coleccion.css">
     </head>
     <body>
         <?php include("./partials/header.php") ?>
-
+     
         <main id="colecciones_generales">
             <?php include("./partials/menu_colecciones.php") ?>
- 
-            <section id="obras">
-                <h2>Obras de arte de Eva BE</h2>
 
-                <section id="todas">
-                    <article>
-                        <figure>
-                            <a href="obra1.php">
-                                <img src="imagenes/image2.jpeg" alt="obrasgeneral">
-                            </a>
-                            <figcaption>
-                                <h3>Café otoñal</h3>
-                                <p>Autora: <cite>Eva BE</cite></p>
-                                <time datetime="2020-06-27">Fecha: <cite>27-06-2020</cite></time>
-                            </figcaption>
-                        </figure> 
-                    </article>
+            <?php
 
-                    <article>
-                        <figure>
-                            <a href="obra1.php">
-                                <img src="imagenes/image5.jpeg" alt="obrasgeneral">
-                            </a>
-                            <figcaption>
-                                <h3>Sirena de flores marinas</h3>
-                                <p>Autora: <cite>Eva BE</cite></p>
-                                <time datetime="2020-09-30">Fecha: <cite>30-09-2020</cite></time>
-                            </figcaption>
-                        </figure> 
-                    </article>
+                //Comprobar si el usuario que está activo ya ha enviado un comentario o no
+                //Conexión a la BBDD
+                $dsn = "mysql:host=localhost;dbname=dbrociobarragan_pw2324";
+                $usuario= "pwrociobarragan";
+                $password= "23rociobarragan24";
+                try {
+                    $conexion = new PDO( $dsn, $usuario, $password );
+                    $conexion->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+                } catch ( PDOException $e ) {
+                    echo "<p>Conexión fallida: " . $e->getMessage() . "</p>";
+                }
 
-                    <article>
-                        <figure>
-                            <a href="obra1.php">
-                                <img src="imagenes/image8.jpeg" alt="obrasgeneral">
-                            </a>
-                            <figcaption>
-                                <h3>Rubor en las mejillas</h3>
-                                <p>Autora: <cite>Eva BE</cite></p>
-                                <time datetime="2022-05-19">Fecha: <cite>19-05-2022</cite></time>
-                            </figcaption>
-                        </figure> 
-                    </article>
+                $consultaSQL = "SELECT * FROM Imagenes WHERE autor = 'Eva BE'";
+                $st = $conexion->prepare($consultaSQL);
+                $st->execute();
 
-                    <article>
-                        <figure>
-                            <a href="obra1.php">
-                                <img src="imagenes/image14.jpeg" alt="obrasgeneral">
-                            </a>
-                            <figcaption>
-                                <h3>Amigo bigotudo</h3>
-                                <p>Autora: <cite>Eva BE</cite></p>
-                                <time datetime="2023-04-30">Fecha: <cite>30-04-2023</cite></time>
-                            </figcaption>
-                        </figure> 
-                    </article>
+                $imagenes = $st->fetchAll(PDO::FETCH_ASSOC);
 
-                     <article>
-                        <figure>
-                            <a href="obra1.php">
-                                <img src="imagenes/image17.jpeg" alt="obrasgeneral">
-                            </a>
-                            <figcaption>
-                                <h3>Nieve y compañía peluda</h3>
-                                <p>Autora: <cite>Eva BE</cite></p>
-                                <time datetime="2022-12-16">Fecha: <cite>26-12-2022</cite></time>
-                            </figcaption>
-                        </figure> 
-                    </article>
+                if($imagenes){
+                    echo '<section id="obras">';
+                    echo '<h2>Obras de arte de Eva BE</h2>';
+                    echo '<section id="todas">';
 
-                    <article>
-                        <figure>
-                            <a href="obra1.php">
-                                <img src="imagenes/image20.jpeg" alt="obrasgeneral">
-                            </a>
-                            <figcaption>
-                                <h3>Melodía felina</h3>
-                                <p>Autora: <cite>Eva BE</cite></p>
-                                <time datetime="2023-03-29">Fecha: <cite>29-03-2023</cite></time>
-                            </figcaption>
-                        </figure> 
-                    </article>
+                    foreach ($imagenes as $imagen){
+                        echo '<article>';
+                        echo '<figure>';
+                        echo '<a href="obra1.php">';
+                        echo '<img src="imagenes/' . $imagen['nombre'] . '" alt="obrasgeneral">';
+                        echo '</a>';
+                        echo '<figcaption>';
+                        echo '<h3>' . $imagen['titulo'] . '</h3>';
+                        echo '<p>Autor/a: <cite>' . $imagen['autor'] . '</cite></p>';
+                        echo '<p>Fecha: <cite>' . $imagen['fecha'] . '</cite></p>';
+                        echo '</figcaption>';
+                        echo '</figure>';
 
-                     <article>
-                        <figure>
-                            <a href="obra1.php">
-                                <img src="imagenes/image23.jpeg" alt="obrasgeneral">
-                            </a>
-                            <figcaption>
-                                <h3>Ensueño de atardecer</h3>
-                                <p>Autora: <cite>Eva BE</cite></p>
-                                <time datetime="2022-08-22">Fecha: <cite>22-08-2022</cite></time>
-                            </figcaption>
-                        </figure> 
-                    </article>
+                        if(isset($_SESSION['usuario']) && $_SESSION['usuario']['tipo_usuario'] == 'administrador'){
+                            echo '<a class="modificar" href="modificar_obra.php?id=' . $imagen['id'] . '">Modificar</a>';
+                            echo '<a class="eliminar" href="eliminar_obra.php?id=' . $imagen['id'] . '">Eliminar</a>';
+                        }
+                        
+                        echo '</article>';
+                    }
 
-                    <article>
-                        <figure>
-                            <a href="obra1.php">
-                                <img src="imagenes/image26.jpeg" alt="obrasgeneral">
-                            </a>
-                            <figcaption>
-                                <h3>Susurros de la noche</h3>
-                                <p>Autora: <cite>Eva BE</cite></p>
-                                <time datetime="2022-03-17">Fecha: <cite>17-03-2022</cite></time>
-                            </figcaption>
-                        </figure> 
-                    </article>
+                    echo '</section>';
+                    echo '<section id="siguientes">';
+                    echo '<nav>';
+                    echo '<a href="siguientes_evabe.php">Siguiente</a>';
+                    echo '</nav>';
+                    echo '</section>';
+                }
 
-                    <article>
-                        <figure>
-                            <a href="obra1.php">
-                                <img src="imagenes/image29.jpeg" alt="obrasgeneral">
-                            </a>
-                            <figcaption>
-                                <h3>La alegría de la pradera</h3>
-                                <p>Autora: <cite>Eva BE</cite></p>
-                                <time datetime="2020-04-25">Fecha: <cite>25-04-2020</cite></time>
-                            </figcaption>
-                        </figure> 
-                    </article>
-                </section>
-
-                <section id="siguientes">
-                    <nav>
-                        <a href="siguientes_evabe.php"> Siguiente</a>
-                    </nav>
-                </section>
-            </section>
+            ?>
         </main>
 
         <?php include("./partials/footer.php") ?>

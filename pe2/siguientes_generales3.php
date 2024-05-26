@@ -25,7 +25,7 @@
                     echo "<p>Conexión fallida: " . $e->getMessage() . "</p>";
                 }
 
-                $consultaSQL = "SELECT * FROM Imagenes WHERE epoca = 'verano'";
+                $consultaSQL = "SELECT * FROM Imagenes WHERE id >= 28";
                 $st = $conexion->prepare($consultaSQL);
                 $st->execute();
 
@@ -33,7 +33,7 @@
 
                 if($imagenes){
                     echo '<section id="obras">';
-                    echo '<h2>Obras de arte de Verano</h2>';
+                    echo '<h2>Obras de arte siguientes de toda la colección</h2>';
                     echo '<section id="todas">';
 
                     foreach ($imagenes as $imagen){
@@ -60,7 +60,8 @@
                     echo '</section>';
                     echo '<section id="siguientes">';
                     echo '<nav>';
-                    echo '<a href="siguientes_verano.php">Siguiente</a>';
+                    echo '<a href="siguientes_generales2.php">Anterior</a>';
+                    echo '<a href="coleccion.php">Siguiente</a>';
                     echo '</nav>';
                     echo '</section>';
                 }
