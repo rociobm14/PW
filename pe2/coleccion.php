@@ -101,7 +101,7 @@
 
                         if(isset($_SESSION['usuario']) && $_SESSION['usuario']['tipo_usuario'] == 'administrador'){
                             echo '<a class="modificar" href="modificar_obra.php?id=' . $imagen['id'] . '&nombre=' . $imagen['titulo'] . '">Modificar</a>';
-                            echo '<a class="eliminar" href="eliminar_obra.php?id=' . $imagen['id'] . '">Eliminar</a>';
+                            echo '<a class="eliminar" href="eliminar_obra.php?id=' . $imagen['id'] . '&nombre=' . $imagen['titulo'] . '">Eliminar</a>';
                         }
                        
                         echo '</article>';

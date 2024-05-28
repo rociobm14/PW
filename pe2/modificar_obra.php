@@ -3,7 +3,6 @@
     <head>
         <title>Colección de obras de arte</title>
         <link rel="stylesheet" type="text/css" href="estilo/header_body_footer.css">
-        <link rel="stylesheet" type="text/css" href="estilo/coleccion.css">
         <link rel="stylesheet" type="text/css" href="estilo/altausuarios.css">
     </head>
     <body>
