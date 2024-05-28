@@ -25,7 +25,7 @@
                     echo "<p>Conexión fallida: " . $e->getMessage() . "</p>";
                 }
 
-                $consultaSQL = "SELECT * FROM Imagenes WHERE epoca = 'otono'";
+                $consultaSQL = "SELECT * FROM Imagenes WHERE epoca = 'Otono'";
                 $st = $conexion->prepare($consultaSQL);
                 $st->execute();
 
