@@ -115,9 +115,12 @@ header nav a:hover {
     background-color:blue; 
 }
 
-header .error{
-    color: red;
-    margin-bottom: 10px;
+p.error{
+    color: white;
+    font-size: 18px;
+    background-color: rgb(233, 100, 100);
+    width: 80%;
+    border-radius: 2opx;
 }
 
 footer{

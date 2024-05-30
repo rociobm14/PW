@@ -4,6 +4,12 @@
         <title>Página de Experiencias</title>
         <link rel="stylesheet" type="text/css" href="estilo/header_body_footer.css">
         <link rel="stylesheet" type="text/css" href="estilo/experiencias.css">
+        <style>
+            .error {
+                color: red;
+                font-size: 0.9em;
+            }
+        </style>
     </head>
     <body>
         <?php include("./partials/header.php") ?>
@@ -48,7 +54,6 @@
 
                     //El usuario no ha registrado experiencia aún, le mostramos el form
                     else{
-
                         echo '<section id="tu_opinion">';
                         echo '<h2>¿Quieres contar tu experiencia en el museo?</h2>';
                         echo '<p>';
@@ -57,21 +62,22 @@
                         echo 'La puntuación de la experiencia en el museo y su comentario, serán visibles ';
                         echo 'por el resto de usuarios';
                         echo '</p>';
-
-                        echo '<form action="" method="post">';
-                        
+    
+                        echo '<form id="registrationForm" action="" method="post">';
                         echo '<label id="recomendar" for="experiencia">¿Qué tan satisfactoria te ha parecido la ';
                         echo 'experiencia del 1 al 10?</label>';
-                        echo '<input type="number" name="satisfaccion" id="experiencia" min="1" max="10" required>';
-
+                        echo '<input type="number" name="satisfaccion" id="experiencia" min="1" max="10">';
+                        echo '<div class="error" id="PuntuacionError"></div>';
+    
                         echo '<fieldset id="radio">';
                         echo '<legend>¿Recomendarías este museo a conocidos o familiares?</legend>';
                         echo '<label for="recomendacion1">Sí, he disfrutado mucho la experiencia.</label>';
                         echo '<input type="radio" id="recomendacion1" name="recomendacion" value="Si">';
                         echo '<label for="recomendacion2">No, no ha sido muy de mi agrado.</label>';
                         echo '<input type="radio" id="recomendacion2" name="recomendacion" value="No">';
+                        echo '<div class="error" id="RecomendarError"></div>';
                         echo '</fieldset>';
-                        
+    
                         echo '<fieldset id="checkbox">';
                         echo '<legend>Por favor, selecciona cuál o cuales han sido tus exposiciónes temporales favoritas</legend>';
                         echo '<label for="miniatura">Exposición de figuras miniatura</label>';
@@ -80,11 +86,13 @@
                         echo '<input type="checkbox" id="lego" name="exposiciones_favoritas[]" value="lego">';
                         echo '<label for="coolman">Exposición COOLMAN COFFEEMAN</label>';
                         echo '<input type="checkbox" id="coolman" name="exposiciones_favoritas[]" value="coolman">';
+                        echo '<div class="error" id="ExposicionesError"></div>';
                         echo '</fieldset>';
-                        
+    
                         echo '<label id="opinion" for="valoracion">Danos tu opinión más detallada, así como mejoras o sugerencias</label>';
-                        echo '<textarea id="valoracion" name="op" rows="10" cols="50" required></textarea>';
-
+                        echo '<textarea id="valoracion" name="op" rows="10" cols="50"></textarea>';
+                        echo '<div class="error" id="OpinionError"></div>';
+    
                         echo '<input type="submit" name="opinion" value="Enviar">';
                         echo '</form>';
                         echo '</section>';
@@ -159,5 +167,52 @@
         </main>
         
         <?php include("./partials/footer.php") ?>
+
+        <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            let valid = true;
+
+            // Clear previous error messages
+            const errors = document.querySelectorAll('.error');
+            errors.forEach(error => error.textContent = '');
+
+            // Get form values
+            const puntuacion = document.getElementById('experiencia').value.trim();
+            const recomendacion = document.querySelector('input[name="recomendacion"]:checked');
+            const exposiciones = document.querySelectorAll('input[name="exposiciones_favoritas[]"]:checked');
+            const opinion = document.getElementById('valoracion').value.trim();
+
+            // Validar puntuacion
+            if (puntuacion === '') {
+                document.getElementById('PuntuacionError').textContent = 'La puntuación es requerida.';
+                valid = false;
+            } else if (puntuacion < 1 || puntuacion > 10) {
+                document.getElementById('PuntuacionError').textContent = 'La puntuación debe estar entre 1 y 10.';
+                valid = false;
+            }
+
+            // Validar Recomendacion
+            if (!recomendacion) {
+                document.getElementById('RecomendarError').textContent = 'La recomendación es requerida.';
+                valid = false;
+            }
+
+            // Validar Exposiciones
+            if (exposiciones.length === 0) {
+                document.getElementById('ExposicionesError').textContent = 'Las exposiciones favoritas son requeridas.';
+                valid = false;
+            }
+
+            // Validar Opinion
+            if (opinion === '') {
+                document.getElementById('OpinionError').textContent = 'La opinión es requerida.';
+                valid = false;
+            }
+
+            if (!valid) {
+                event.preventDefault();
+            }
+        });
+    </script>
     </body>
 </html>

@@ -45,3 +45,7 @@ main form input[type="submit"] {
 main form input[type="submit"]:hover {
     background-color: green;
 }
+
+span.error{
+    color:red;
+}

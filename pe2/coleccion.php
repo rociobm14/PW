@@ -4,6 +4,17 @@
         <title>Colección de obras de arte</title>
         <link rel="stylesheet" type="text/css" href="estilo/header_body_footer.css">
         <link rel="stylesheet" type="text/css" href="estilo/coleccion.css">
+        <style>
+        /* Estilo para la ventana emergente */
+        .popup {
+            display: none;
+            position: absolute;
+            background-color: rgb(207, 224, 240, 0.8);
+            font-size: 20px;
+            border: 1px solid;
+            padding: 10px;
+        }
+    </style>
     </head>
     <body>
         <?php include("./partials/header.php") ?>
@@ -86,11 +97,11 @@
                     echo '<h2>Obras de arte de toda la colección</h2>';
                     echo '<section id="todas">';
 
-                    foreach ($imagenes as $imagen){
+                    foreach ($imagenes as $key => $imagen){
                         echo '<article>';
                         echo '<figure>';
                         echo '<a href="obra.php?id=26">';
-                        echo '<img src="imagenes/' . $imagen['nombre'] . '" alt="obrasgeneral">';
+                        echo '<img src="imagenes/' . $imagen['nombre'] . '" alt="obrasgeneral" id="imagen">';
                         echo '</a>';
                         echo '<figcaption>';
                         echo '<h3>' . $imagen['titulo'] . '</h3>';
@@ -98,6 +109,10 @@
                         echo '<p>Fecha: <cite>' . $imagen['fecha'] . '</cite></p>';
                         echo '</figcaption>';
                         echo '</figure>';
+                        echo '<div class="popup" id="popup' . $key . '">
+                                <div>' . $imagen['titulo'] . '</div>
+                                <div>' . $imagen['tema'] . '</div>
+                            </div>';
 
                         if(isset($_SESSION['usuario']) && $_SESSION['usuario']['tipo_usuario'] == 'administrador'){
                             echo '<a class="modificar" href="modificar_obra.php?id=' . $imagen['id'] . '&nombre=' . $imagen['titulo'] . '">Modificar</a>';
@@ -152,6 +167,24 @@
                 echo '</section>';
             ?>
         </main>
+
+        <script>
+            // Seleccionar todas las imágenes y popups
+            var imagenes = document.querySelectorAll('[id^="imagen"]');
+            var popups = document.querySelectorAll('[id^="popup"]');
+
+            // Aplicar el evento a cada imagen y popup
+            for (let i = 0; i < imagenes.length; i++) {
+                imagenes[i].addEventListener("mousemove", function(event) {
+                    popups[i].style.display = "block";
+                });
+
+                imagenes[i].addEventListener("mouseout", function() {
+                    popups[i].style.display = "none";
+                });
+            }
+        </script>
+
 
         <?php include("./partials/footer.php") ?>
     </body>
